@@ -1,7 +1,7 @@
-argparse==1.2.1
-distribute==0.6.24
+marshmallow==2.7.3
+marshmallow-jsonapi==0.7.1
 peewee==2.1.4
 pep8==1.4.6
-psycopg2==2.5.1
+pkg-resources==0.0.0
+pyroute2==0.4.1
 web.py==0.37
-wsgiref==0.1.2
