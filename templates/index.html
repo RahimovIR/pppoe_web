@@ -1,1 +1,47 @@
-<h1>Hello from Index</h1>
+$def with (interface)
+
+<h1>PPPoE control page</h1>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Control</div>
+  <div class="panel-body">
+    <div class="btn-group" role="group" aria-label="...">
+      <button type="button" class="btn btn-success" onclick="Connect()">Connect</button>
+      <button type="button" class="btn btn-danger" onclick="Disconnect()">Disconnect</button>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title pull-left">
+        Status
+      </h3>
+      <button class="btn btn-default pull-right"  onclick="updateStatus()">
+          <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+      </button>
+      <div class="clearfix"></div>
+  </div>
+  <div class="panel-body">
+    <div class="alert alert-success" role="alert" id="status-connect" hidden>$:interface connect</div>
+    <div class="alert alert-danger" role="alert" id="status-disconnect" hidden>$:interface disconnect</div>
+  </div>
+</div>
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+      <h3 class="panel-title pull-left">
+        Log
+      </h3>
+      <button class="btn btn-default pull-right" onclick="updateLog()">
+          <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+      </button>
+      <div class="clearfix"></div>
+  </div>
+  <div class="panel-body">
+      <textarea class="boxsizingBorder" rows="15" id="log-container" readonly>
+
+      </textarea>
+  </div>
+</div>
